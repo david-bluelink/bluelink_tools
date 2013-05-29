@@ -1,6 +1,6 @@
 Bluelink Build Table
 
-Automaticcly builds Tables Based on Json Object Arrays<br/>
+Automatically builds tables based on Json Object Arrays<br/>
 It would create the headers and fill the data and it will sort the table
 <h2>Div Example</h2>
     <div id="build_table" 
