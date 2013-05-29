@@ -1,11 +1,11 @@
-  <h3>Bluelink Date Picker Generator </h3>
+  <h3>Bluelink Date Picker Builder </h3>
 	By David Holmes
 
 	
   Create Date Pickers with Quick Date Options very easily 
-	You can do it by DIV if you have the bluelink.core.js file added
+  You can do it by DIV if you have the bluelink.core.js file added
   
-  <h3>Div Example </h3>
+  	<h3>Div Example </h3>
 
 	<div id="date_picker" 
 		 data-type="build_date_picker" 
@@ -16,7 +16,7 @@
 	</div>
 
 
-<h3>Javascript Example </h3>
+	<h3>Javascript Example </h3>
 
 	$('#myDiv').html(build_date_picker({
 		onupdate:'reload_data',
