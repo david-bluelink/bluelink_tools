@@ -2,25 +2,24 @@
 	By David Holmes
 
 	
-  Create Date Pickers with Quick Date Options very easily 
+  Create A Date Picker Very Easily With Parameters that allow you on update to use a function
   You can do it by DIV if you have the bluelink.core.js file added
   
-  	<h3>Div Example </h3>
+<h3>DIV Example </h3>
 
-	<div id="date_picker" 
-		 data-type="build_date_picker" 
-		 data-onupdate="reload_data"
-		 data-download_as_csv="#get_table_id"
-		 data-start_date='2013-05-13'
-		 data-end_date='2013-05-13'>
+	<div id="date_picker"  // create your own id
+		 data-type="build_date_picker"  // this tells bluelink.core.js to build the datepicker
+		 data-onupdate="reload_data" // this tells tells it to on update run this function
+		 data-start_date='2013-05-13' // give it a start date 
+		 data-end_date='2013-05-13' // give it an end date >
 	</div>
 
 
-	<h3>Javascript Example </h3>
+<h3>Javascript Example </h3>
+	<div id="myDiv"></div>
 
 	$('#myDiv').html(build_date_picker({
 		onupdate:'reload_data',
-		download_as_csv:'#get_table_id',
 		start_date:'2013-05-13',
 		end_date:'2013-05-13'
 	}))
