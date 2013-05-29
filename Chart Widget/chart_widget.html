@@ -1,0 +1,69 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+<script src="chart_widget.js"></script>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <body>
+<br/><br/>
+<script>
+var chart_json = [{"Date":"2013-05-22","Queries":"775253550","Queries_Filled":"285998104","Overall_Fill_Rate":"36.8909","Clicks":"11703240","CTR_Queries":1.5096,"CTR_Queries_Filled":4.0921},{"Date":"2013-05-23","Queries":"483320439","Queries_Filled":"181049801","Overall_Fill_Rate":"37.4596","Clicks":"11073130","CTR_Queries":2.2911,"CTR_Queries_Filled":6.1161},{"Date":"2013-05-24","Queries":"554135422","Queries_Filled":"167653824","Overall_Fill_Rate":"30.2550","Clicks":"10758335","CTR_Queries":1.9415,"CTR_Queries_Filled":6.417},{"Date":"2013-05-25","Queries":"721616785","Queries_Filled":"245707844","Overall_Fill_Rate":"34.0496","Clicks":"10027329","CTR_Queries":1.3896,"CTR_Queries_Filled":4.081},{"Date":"2013-05-26","Queries":"720099778","Queries_Filled":"243927318","Overall_Fill_Rate":"33.8741","Clicks":"9851455","CTR_Queries":1.3681,"CTR_Queries_Filled":4.0387},{"Date":"2013-05-27","Queries":"728864743","Queries_Filled":"255461784","Overall_Fill_Rate":"35.0493","Clicks":"10545938","CTR_Queries":1.4469,"CTR_Queries_Filled":4.1282},{"Date":"2013-05-28","Queries":"740186367","Queries_Filled":"258640021","Overall_Fill_Rate":"34.9426","Clicks":"11261286","CTR_Queries":1.5214,"CTR_Queries_Filled":4.354}]
+
+
+
+</script>
+<div id="chart_widget" 
+	 data-type="chart_widget" 
+     data-title:'', // This give the charts a title 
+     data-id: "chart_widget_body", // this tells the chart to render in this id 
+     data-url: 'chart_json', // this is the URL that grabs that JSON
+     data-chart_type: "line", // this tells the chart_widget what type of charts
+     data-chart_title: "", // this gives it the high charts title 
+     data-x_axis_title: '', // this is the x-axis title 
+     data-x_axis: 'date', // this tells chart_widget the x-axis is report_date in the json
+     data-y_axis_title: "", // this gives the y-axis title 
+     data-series: "[{name:'Queries',data:'Queries'},{name:'CTR_Queries_Filled',data:'CTR_Queries_Filled'}", // this is the chart seris based off the JSON
+     data-reverse:'' // this reverses the json array in case the dates are the wrong way
+>
+</div>
+
+<script>
+$('#from_date').val()
+$('#to_date').val()
+$(document).ready(function () {
+ 	console.log($('*[data-type]'));
+
+ 	$('*[data-type]').each(function(count,div){
+		if(typeof  window[$(this).data('type')]  === 'function'){
+			var data_tags =$(this).data()
+				data_tags['id'] =  $(this).attr('id')
+				data_tags['class'] =  $(this).attr('class')
+			
+			$(this).html(window[$(this).data('type')]($(this).data()))
+		}
+	})
+
+
+	})
+	
+/*
+   new chart_widget({
+              title:'', // This give the charts a title 
+              id: "chart_widget_body", // this tells the chart to render in this id 
+              url: url, // this is the URL that grabs that JSON
+              chart_type: "line", // this tells the chart_widget what type of charts
+              chart_title: "", // this gives it the high charts title 
+              x_axis_title: '', // this is the x-axis title 
+              x_axis: 'report_date', // this tells chart_widget the x-axis is report_date in the json
+              y_axis_title: "", // this gives the y-axis title 
+              series: series_data, // this is the chart seris based off the JSON
+              reverse:'' // this reverses the json array incase the dates are one way
+              
+              });
+  */
+</script>
+    </body>
+</html>
