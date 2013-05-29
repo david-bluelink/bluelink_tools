@@ -1,6 +1,10 @@
-bluelink_tools
-==============
+Bluelink Build Table
 
-A collection of blue link  tools and components that you can use to make building reports and other features a lot easier 
-
-<h2> Help</h2>
+Automaticcly builds Tables Based on Json Object Arrays<br/>
+It would create the headers and fill the data and it will sort the table
+<h2>Div Example</h2>
+    <div id="build_table" 
+        data-type="build_table" 
+        data-json="build_table_json" 
+      data-url="">
+  </div>
