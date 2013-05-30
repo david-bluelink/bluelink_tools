@@ -2,8 +2,10 @@
 	By David Holmes
 
 	
-  Create A Date Picker very easily with parameters that allow you on update to use a function
-  You can do it by DIV if you have the bluelink.core.js file added
+  Create A Date Picker very easily with parameters 
+  Also it comes with a quick date feature that helps you choose dates very easily without any javascript needed for the date picker
+  <h3>ScreenShot</h3>
+  <img src="example.png"><br/>
   <h3>Dependencies</h3>
   Jquery<br/>
   Bootstrap<br/>
