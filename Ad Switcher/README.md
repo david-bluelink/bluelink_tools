@@ -3,8 +3,9 @@ BlueLink Ad Switch
 by David Holmes<br/>
 
 This plugin helps create Google Adsense style ads using many different services.
-<h2> Example</h2>
-	
+<h2>Services Supported</h2>
+<h2>Example And Parameters</h2>
+     
                    <?php 
 
                     $_GET['bluelink_get_ad_ad_type'] = 'yahoo';
@@ -18,4 +19,3 @@ This plugin helps create Google Adsense style ads using many different services.
                     bluelink_get_ad_init();
                     ?>
 
-	
