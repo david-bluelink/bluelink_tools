@@ -54,10 +54,10 @@
 
 	<script>
 		function reload_data(){
-		alert('I just reloaded data')
+			alert('I just reloaded data')
 		}
-		$('#from_date').val() // to get the from date value
-		$('#to_date').val() // to get the to date value 
-		</script>
-    	</body>
-		</html>
+			$('#from_date').val() // to get the from date value
+			$('#to_date').val() // to get the to date value 
+	</script>
+    </body>
+	</html>
