@@ -1,4 +1,4 @@
-BlueLink Ad Switch
+BlueLink Ad Switcher
 ==============
 by David Holmes<br/>
 
