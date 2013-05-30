@@ -8,7 +8,7 @@
   Jquery<br/>
   Bootstrap<br/>
   Bluelink.core.js
-  
+
   <h3>Screen Shot</h3>
   <img src="example.png"><br/>
 
@@ -41,27 +41,23 @@
 
 	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 	<html>
-    		<body>
-		<br/><br/>
+    <body>
+	<br/><br/>
 
-		<div id="date_picker" 
-		data-type="build_date_picker" 
-		data-onupdate="reload_data"
-		data-download_as_csv="#get_table_id"
-		data-start_date="2013-05-20"
-		data-end_date="2013-05-20">
-		</div>
+	<div id="date_picker" 
+	data-type="build_date_picker" 
+	data-onupdate="reload_data"
+	data-download_as_csv="#get_table_id"
+	data-start_date="2013-05-20"
+	data-end_date="2013-05-20">
+	</div>
 
 	<script>
-	$('#from_date').val()
-	$('#to_date').val()
-	/*
-	$('#date_picker').html(build_date_picker({
-	  start_date:'2013-05-12',
-	  end_date:'2013-05-12'
-	
-	}))
-	*/
-	</script>
-    		</body>
-	</html>
+		function reload_data(){
+		alert('I just reloaded data')
+		}
+		$('#from_date').val() // to get the from date value
+		$('#to_date').val() // to get the to date value 
+		</script>
+    	</body>
+		</html>
