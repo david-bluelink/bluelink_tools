@@ -4,6 +4,12 @@ by David Holmes<br/>
 
 This plugin helps create Google Adsense style ads using many different services.
 <h2>Services Supported</h2>
+<ul>
+     <li>Yahoo Feeds</li>
+     <li>Search 123 Feeds</li>
+     <li>Bluelink Feeds</li>
+     <li>Bluelink Run Of Network Feeds</li>
+<ul>
 <h2>Example And Parameters</h2>
      
                    <?php 
