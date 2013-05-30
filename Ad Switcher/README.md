@@ -3,6 +3,8 @@ BlueLink Ad Switcher
 by David Holmes<br/>
 
 This plugin helps create Google Adsense style ads using many different services.
+<h2>Screen Shot</h2>
+<img src="example.png">
 <h2>Services Supported</h2>
 <ul>
      <li>Yahoo Feeds</li>
