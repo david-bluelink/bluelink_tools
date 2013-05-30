@@ -9,7 +9,7 @@ This plugin helps create Google Adsense style ads using many different services.
      <li>Search 123 Feeds</li>
      <li>Bluelink Feeds</li>
      <li>Bluelink Run Of Network Feeds</li>
-<ul><br/>
+</ul>
 <h2>Example And Parameters</h2>
      
                    <?php 
