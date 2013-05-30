@@ -4,12 +4,14 @@
 	
   Create A Date Picker very easily with parameters 
   Also it comes with a quick date feature that helps you choose dates very easily without any javascript needed for the date picker
-  <h3>ScreenShot</h3>
-  <img src="example.png"><br/>
-  <h3>Dependencies</h3>
+ <h3>Dependencies</h3>
   Jquery<br/>
   Bootstrap<br/>
   Bluelink.core.js
+  
+  <h3>Screen Shot</h3>
+  <img src="example.png"><br/>
+
 <h3>DIV Example </h3>
 
 	<div id="date_picker"  // create your own id
