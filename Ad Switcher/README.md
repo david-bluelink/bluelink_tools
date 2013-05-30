@@ -9,11 +9,10 @@ This plugin helps create Google Adsense style ads using many different services.
      <li>Search 123 Feeds</li>
      <li>Bluelink Feeds</li>
      <li>Bluelink Run Of Network Feeds</li>
-<ul>
+<ul><br/>
 <h2>Example And Parameters</h2>
      
                    <?php 
-
                     $_GET['bluelink_get_ad_ad_type'] = 'yahoo'; // THIS IS THE DEFUALT AD TO SERVE
                     $_GET['bluelink_get_ad_ad_order'] = 'search_123,bluelink'; IF DEFUALT AD DOESNT HAVE RESULTS TRY THESE OTHER 
                     $_GET['bluelink_get_ad_search_keyword'] = 'cars'; // THIS IS THE KEYWORD TO SEARCH FOR 
