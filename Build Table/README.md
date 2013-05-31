@@ -6,5 +6,4 @@ It would create the headers and fill the data and it will sort the table
     <div id="build_table" 
         data-type="build_table" 
         data-json="build_table_json" 
-      data-url="">
-  </div>
+      data-url=""></div>
